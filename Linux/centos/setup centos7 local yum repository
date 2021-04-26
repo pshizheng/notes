@@ -1,0 +1,9 @@
+vim  /etc/yum.repos.d/local-repo.repo
+
+//file content
+[OpenHPC-local]
+name=OpenHPC-1.4
+baseurl=http://202.197.161.130:4096/repo/centos7/
+enable=1
+gpgcheck=0
+priority=2
