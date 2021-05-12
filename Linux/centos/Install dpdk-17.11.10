@@ -1,0 +1,12 @@
+在dpdk顶层目录下运行命令：
+make config T=x86_64-native-linuxapp-gcc
+make install T=x86_64-native-linuxapp-gcc
+
+缺少numa.h文件：
+yum install numactl-devel
+
+运行程序要创建大页内存：
+cat /proc/meminfo |grep Huge
+echo 8192 >/sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+mkdir /mnt/huge
+mount -t hugetlbfs nodev /mnt/huge
