@@ -7,3 +7,6 @@ baseurl=http://202.197.161.130:4096/repo/centos7/
 enable=1
 gpgcheck=0
 priority=2
+
+
+//删除/etc/yum.repos.d/目录下的其他文件
